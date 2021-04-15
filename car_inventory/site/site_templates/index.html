@@ -13,7 +13,13 @@
                     <div class="alert alert-success">
                         {{ msg }}
                         <button type="button" class='btn-close' data-bs-dismiss = 'alert' aria-label="Close">&times;</button>
-                    </div>                
+                    </div> 
+                    
+                {% elif cat == 'auth-success' %}
+                    <div class="alert alert-success">
+                        {{ msg }}
+                        <button type="button" class='btn-close' data-bs-dismiss = 'alert' aria-label="Close">&times;</button>
+                    </div>
                 {% endif %}
             {% endfor %}
         {% endif %}
