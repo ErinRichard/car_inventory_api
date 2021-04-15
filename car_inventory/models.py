@@ -87,7 +87,7 @@ class Car(db.Model):
         self.id = self.set_id()
         self.make = make
         self.model = model
-        self.price = sale_price
+        self.sale_price = sale_price
         self.color = color
         self.year = year
         self.mpg = mpg
