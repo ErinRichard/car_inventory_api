@@ -13,6 +13,6 @@ class Config():
     # SECRET_KEY allows us to use forms inside of flask
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'You will never guess...'
     
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DEPLOY_DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False #Turn off update messages from the database
