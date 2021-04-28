@@ -75,8 +75,8 @@ class Car(db.Model):
     model = db.Column(db.String(200), nullable = True)
     # Precision means we will have 10 available spaces for numeric value with 2 decimal places at the end of it
     sale_price = db.Column(db.Numeric(precision=10, scale = 2))
-    color = db.Column(db.String(150), nullable = True)
-    year = db.Column(db.Numeric(precision=4), nullable = True)
+    color = db.Column(db.String(150))
+    year = db.Column(db.Numeric(precision=4))
     mpg = db.Column(db.String(100))
     new_used = db.Column(db.String(20))
     # Specify Foriegn Key relationship in the () after db.ForeignKey
