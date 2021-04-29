@@ -106,7 +106,7 @@ class CarSchema(ma.Schema):
         # Don't want to expose the token for the user, so not included here
         # This is what we should see as the end result of the json in Insomnia
         # Asking the Schema to create the look and feel of our results
-        fields = ['id', 'make', 'model', 'sale_price', 'color,' 'year', 'mpg', 'new_used']
+        fields = ['id', 'make', 'model', 'sale_price', 'color', 'year', 'mpg', 'new_used']
 
 car_schema = CarSchema()
 # many = True means it should display the results in a list if many cars are available/entered
